@@ -1,0 +1,9 @@
+
+I have included all of my files for your ease.  My main.c has each section block commented, so you can test each one separately.
+
+I had the multiplication test working perfectly since last week.  This morning, however, I decided to change my allocBigInt function and I somehow broke the multiplication test.
+I'd really love it if you could give me some insight on this!
+
+FYI, I do realize that I wrote a lot of things very poorly.  This was because I continued working off my initial understanding of the requirements.  I would have been better off to have scrapped my BigInt.c and started from scratch once I received the main.c file.  >.<
+
+Thanks!!

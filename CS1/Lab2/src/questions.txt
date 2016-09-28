@@ -1,0 +1,5 @@
+-leave pointers in normal orientation - next points toward tail, prev points 
+	toward head
+
+-submit 4 files + 1 screenshot
+

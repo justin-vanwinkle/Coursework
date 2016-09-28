@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\justi_000\Desktop\mips\counter\counter\button_binary.ncd
+OUTFILE=C:\Users\justi_000\Desktop\mips\counter\counter\button_binary.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\justi_000\Desktop\mips\counter\counter
+LICENSE=WebPack
+USER_INFO=210997740_0_0_132

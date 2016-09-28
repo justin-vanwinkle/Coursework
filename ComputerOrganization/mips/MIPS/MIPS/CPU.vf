@@ -1,0 +1,147 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CPU.vf
+// /___/   /\     Timestamp : 09/28/2015 19:48:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.vf -w C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.sch
+//Design Name: CPU
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CPU(btn1, 
+           btn2, 
+           btn3, 
+           clk, 
+           reset, 
+           sw, 
+           an, 
+           dp, 
+           LD, 
+           seg);
+
+    input btn1;
+    input btn2;
+    input btn3;
+    input clk;
+    input reset;
+    input [7:0] sw;
+   output [3:0] an;
+   output dp;
+   output [7:0] LD;
+   output [6:0] seg;
+   
+   wire [4:0] aux0;
+   wire [4:0] aux1;
+   wire [4:0] aux2;
+   wire [4:0] aux3;
+   wire clk_disp;
+   wire clk_man;
+   wire [7:0] Control;
+   wire [4:0] D0;
+   wire [4:0] D1;
+   wire [4:0] D2;
+   wire [4:0] D3;
+   wire [15:0] Inst;
+   wire [7:0] LEDS;
+   wire [7:0] OpA;
+   wire [7:0] OpB;
+   wire [7:0] PCout;
+   wire pulse2;
+   wire [7:0] Res;
+   wire [1:0] sel;
+   wire [6:0] XLXN_41;
+   wire [6:0] XLXN_42;
+   wire [6:0] XLXN_43;
+   wire [6:0] XLXN_44;
+   
+   MIPS  XLXI_1 (.clk(clk_man), 
+                .reset(reset), 
+                .SW(sw[7:0]), 
+                .Control(Control[7:0]), 
+                .Inst(Inst[15:0]), 
+                .LEDS(LEDS[7:0]), 
+                .OpA(OpA[7:0]), 
+                .OpB(OpB[7:0]), 
+                .PCout(PCout[7:0]), 
+                .Res(Res[7:0]));
+   clk_div  XLXI_6 (.clk_in(clk), 
+                   .manual(btn3), 
+                   .manual2(btn2), 
+                   .reset(reset), 
+                   .clk_2sec(), 
+                   .clk_50MHz(clk_disp), 
+                   .pulse(clk_man), 
+                   .pulse2(pulse2));
+   Contr_7seg  XLXI_7 (.clk(clk_disp), 
+                      .disp1(XLXN_41[6:0]), 
+                      .disp2(XLXN_42[6:0]), 
+                      .disp3(XLXN_43[6:0]), 
+                      .disp4(XLXN_44[6:0]), 
+                      .reset(reset), 
+                      .an(an[3:0]), 
+                      .dp(dp), 
+                      .seg(seg[6:0]));
+   control_out  XLXI_8 (.clk(pulse2), 
+                       .reset(reset), 
+                       .aux0(aux0[4:0]), 
+                       .aux1(aux1[4:0]), 
+                       .aux2(aux2[4:0]), 
+                       .aux3(aux3[4:0]), 
+                       .sel(sel[1:0]));
+   HEX_7Seg_DEC  XLXI_9 (.bcd(D0[4:0]), 
+                        .seg(XLXN_41[6:0]));
+   HEX_7Seg_DEC  XLXI_10 (.bcd(D1[4:0]), 
+                         .seg(XLXN_42[6:0]));
+   HEX_7Seg_DEC  XLXI_11 (.bcd(D2[4:0]), 
+                         .seg(XLXN_43[6:0]));
+   HEX_7Seg_DEC  XLXI_12 (.bcd(D3[4:0]), 
+                         .seg(XLXN_44[6:0]));
+   M4to1_4  XLXI_17 (.I0(PCout[3:0]), 
+                    .I1(Inst[3:0]), 
+                    .I2(OpB[3:0]), 
+                    .I3(aux0[3:0]), 
+                    .sel(sel[1:0]), 
+                    .Y(D0[3:0]));
+   M4to1_4  XLXI_18 (.I0(PCout[7:4]), 
+                    .I1(Inst[7:4]), 
+                    .I2(OpB[7:4]), 
+                    .I3(Res[3:0]), 
+                    .sel(sel[1:0]), 
+                    .Y(D1[3:0]));
+   M4to1_4  XLXI_19 (.I0(aux2[3:0]), 
+                    .I1(Inst[11:8]), 
+                    .I2(OpA[3:0]), 
+                    .I3(Res[7:4]), 
+                    .sel(sel[1:0]), 
+                    .Y(D2[3:0]));
+   M4to1_4  XLXI_20 (.I0(aux3[3:0]), 
+                    .I1(Inst[15:12]), 
+                    .I2(OpA[7:4]), 
+                    .I3(aux1[3:0]), 
+                    .sel(sel[1:0]), 
+                    .Y(D3[3:0]));
+   MUX8bits  XLXI_32 (.A(LEDS[7:0]), 
+                     .B(Control[7:0]), 
+                     .Sel(btn1), 
+                     .Y(LD[7:0]));
+   BUF  XLXI_70 (.I(aux0[4]), 
+                .O(D0[4]));
+   BUF  XLXI_71 (.I(aux1[4]), 
+                .O(D1[4]));
+   BUF  XLXI_72 (.I(aux2[4]), 
+                .O(D2[4]));
+   BUF  XLXI_73 (.I(aux3[4]), 
+                .O(D3[4]));
+endmodule

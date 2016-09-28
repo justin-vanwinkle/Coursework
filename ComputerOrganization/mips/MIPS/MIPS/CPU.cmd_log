@@ -1,0 +1,21 @@
+sch2verilog -intstyle ise -family spartan3e   -w "E:/mips8bit/MIPS/CPU.sch" CPU.vf
+sch2verilog -intstyle ise -family spartan3e   -w "E:/mips8bit/MIPS/CPU.sch" CPU.vf
+sch2verilog -intstyle ise -family spartan3e   -w "E:/mips8bit/MIPS/CPU.sch" CPU.vf
+xst -ise "E:/mips8bit/MIPS/MIPS.ise" -intstyle ise -ifn CPU.xst -ofn CPU.syr
+ngdbuild -ise "E:/mips8bit/MIPS/MIPS.ise" -intstyle ise -dd _ngo -nt timestamp -uc "CPU.ucf" -p xc3s100e-cp132-5 "CPU.ngc" CPU.ngd
+map -ise "E:/mips8bit/MIPS/MIPS.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf
+par -ise "E:/mips8bit/MIPS/MIPS.ise" -w -intstyle ise -ol std -t 1 CPU_map.ncd CPU.ncd CPU.pcf
+trce -ise "E:/mips8bit/MIPS/MIPS.ise" -intstyle ise -e 3 -s 5 -xml CPU CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf
+bitgen -ise "E:/mips8bit/MIPS/MIPS.ise" -intstyle ise -f CPU.ut CPU.ncd
+xst -intstyle ise -ifn "C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.xst" -ofn "C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s100e-cp132-5 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr b -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -e 3 -s 5 -n 3 -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.xst" -ofn "C:/Users/justi_000/Desktop/mips/MIPS/MIPS/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s100e-cp132-5 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr b -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -e 3 -s 5 -n 3 -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
