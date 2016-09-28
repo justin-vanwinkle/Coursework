@@ -1,0 +1,8 @@
+V3 7
+FL C:/Users/Student/Desktop/Lab1/invCode/codeInv.v 2015/01/28.12:32:38 J.36
+MO work/codeInv FL C:/Users/Student/Desktop/Lab1/invCode/codeInv.v
+FL C:/Users/Student/Desktop/Lab1/invCode/invTestBench.tfw 2015/01/28.12:33:53 J.36
+MO work/invTestBench FL C:/Users/Student/Desktop/Lab1/invCode/invTestBench.tfw \
+      MI codeInv
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

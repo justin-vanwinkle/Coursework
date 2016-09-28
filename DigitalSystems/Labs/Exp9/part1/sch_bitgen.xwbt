@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\justi_000\Dropbox\Academia\Current Courses\Digital\Labs\Exp9\part1\sch.ncd
+OUTFILE=C:\Users\justi_000\Dropbox\Academia\Current Courses\Digital\Labs\Exp9\part1\sch.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\justi_000\Dropbox\Academia\Current Courses\Digital\Labs\Exp9\part1
+LICENSE=WebPack
+USER_INFO=210997740_0_0_132

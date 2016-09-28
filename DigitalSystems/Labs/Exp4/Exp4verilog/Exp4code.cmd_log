@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "Exp4code.ngc" Exp4code.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Exp4code_map.ncd Exp4code.ngd Exp4code.pcf 
+par -w -intstyle ise -ol high -t 1 Exp4code_map.ncd Exp4code.ncd Exp4code.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Exp4code.twx Exp4code.ncd -o Exp4code.twr Exp4code.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4verilog/Exp4code.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mapping.ucf -p xc3s100e-cp132-5 "Exp4code.ngc" Exp4code.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Exp4code_map.ncd Exp4code.ngd Exp4code.pcf 
+par -w -intstyle ise -ol high -t 1 Exp4code_map.ncd Exp4code.ncd Exp4code.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Exp4code.twx Exp4code.ncd -o Exp4code.twr Exp4code.pcf -ucf mapping.ucf 
+bitgen -intstyle ise -f Exp4code.ut Exp4code.ncd 

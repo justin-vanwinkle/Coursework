@@ -1,0 +1,8 @@
+V3 7
+FL C:/Users/Student/Desktop/Lab1/xorCode/codeXOR.v 2015/01/28.12:26:52 J.36
+MO work/codeXOR FL C:/Users/Student/Desktop/Lab1/xorCode/codeXOR.v
+FL C:/Users/Student/Desktop/Lab1/xorCode/xorTestBench.tfw 2015/01/28.12:28:07 J.36
+MO work/xorTestBench FL C:/Users/Student/Desktop/Lab1/xorCode/xorTestBench.tfw \
+      MI codeXOR
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

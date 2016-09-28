@@ -1,0 +1,3 @@
+MODULE nandTestBench
+SUBMODULE nandGate
+INSTANCE UUT

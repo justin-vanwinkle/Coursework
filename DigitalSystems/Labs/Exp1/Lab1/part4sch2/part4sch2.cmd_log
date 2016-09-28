@@ -1,0 +1,11 @@
+sch2verilog -intstyle ise -family spartan3e   -w "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.sch" part4sch2.vf
+xst -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -ifn part4sch2.xst -ofn part4sch2.syr
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "part4sch2.ngc" part4sch2.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o part4sch2_map.ncd part4sch2.ngd part4sch2.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -w -intstyle ise -ol std -t 1 part4sch2_map.ncd part4sch2.ncd part4sch2.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -e 3 -s 5 -xml part4sch2 part4sch2.ncd -o part4sch2.twr part4sch2.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -dd _ngo -nt timestamp -uc "part4sch2.ucf" -p xc3s100e-cp132-5 "part4sch2.ngc" part4sch2.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o part4sch2_map.ncd part4sch2.ngd part4sch2.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -w -intstyle ise -ol std -t 1 part4sch2_map.ncd part4sch2.ncd part4sch2.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -e 3 -s 5 -xml part4sch2 part4sch2.ncd -o part4sch2.twr part4sch2.pcf -ucf part4sch2.ucf
+bitgen -ise "C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.ise" -intstyle ise -f part4sch2.ut part4sch2.ncd

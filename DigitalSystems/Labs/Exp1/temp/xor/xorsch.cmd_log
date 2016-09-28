@@ -1,0 +1,17 @@
+sch2verilog -intstyle ise -family spartan3e   -w "C:/Users/Student/Desktop/temp/xor/xorsch.sch" xorsch.vf
+xst -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -ifn xorsch.xst -ofn xorsch.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "xorsch.ngc" xorsch.ngd
+map -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o xorsch_map.ncd xorsch.ngd xorsch.pcf
+par -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -w -intstyle ise -ol std -t 1 xorsch_map.ncd xorsch.ncd xorsch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -e 3 -s 5 -xml xorsch xorsch.ncd -o xorsch.twr xorsch.pcf
+bitgen -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -f xorsch.ut xorsch.ncd
+ngdbuild -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "xorsch.ngc" xorsch.ngd
+map -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o xorsch_map.ncd xorsch.ngd xorsch.pcf
+par -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -w -intstyle ise -ol std -t 1 xorsch_map.ncd xorsch.ncd xorsch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -e 3 -s 5 -xml xorsch xorsch.ncd -o xorsch.twr xorsch.pcf
+bitgen -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -f xorsch.ut xorsch.ncd
+ngdbuild -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -dd _ngo -nt timestamp -uc "xorsch.ucf" -p xc3s100e-cp132-5 "xorsch.ngc" xorsch.ngd
+map -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o xorsch_map.ncd xorsch.ngd xorsch.pcf
+par -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -w -intstyle ise -ol std -t 1 xorsch_map.ncd xorsch.ncd xorsch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -e 3 -s 5 -xml xorsch xorsch.ncd -o xorsch.twr xorsch.pcf -ucf xorsch.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/xor/xor.ise" -intstyle ise -f xorsch.ut xorsch.ncd

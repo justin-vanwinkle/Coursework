@@ -1,0 +1,3 @@
+verilog work "orGate.vf"
+verilog work "orTestBench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

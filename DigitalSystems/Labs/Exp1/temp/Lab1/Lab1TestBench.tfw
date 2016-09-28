@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : Lab1TestBench.tfw
+// /___/   /\     Timestamp : Wed Jan 21 12:52:39 2015
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: Lab1TestBench
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module Lab1TestBench;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    wire O;
+
+
+    Lab1 UUT (
+        .A(A),
+        .B(B),
+        .O(O));
+
+    initial begin
+        // -------------  Current Time:  300ns
+        #300;
+        A = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  500ns
+        #200;
+        A = 1'b0;
+        B = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  700ns
+        #200;
+        A = 1'b1;
+    end
+
+endmodule
+

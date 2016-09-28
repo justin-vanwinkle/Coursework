@@ -1,0 +1,3 @@
+verilog work "exp4sch.vf"
+verilog work "exp4schTest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

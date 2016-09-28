@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jun 23 14:22:58 2015
+
+drc -z exp4sch.ncd exp4sch.pcf
+
+DRC detected 0 errors and 0 warnings.

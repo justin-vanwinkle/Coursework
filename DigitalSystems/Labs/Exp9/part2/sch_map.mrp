@@ -1,0 +1,380 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'sch'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off
+-c 100 -o sch_map.ncd sch.ngd sch.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Jul 30 23:07:38 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    8
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0   0%
+    Number of Slices containing unrelated logic:          0 out of       0   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                  3 out of      83    3%
+
+Average Fanout of Non-Clock Nets:                0.00
+
+Peak Memory Usage:  334 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal Clk connected to top level port Clk has been
+   removed.
+WARNING:MapLib:701 - Signal S<2> connected to top level port S<2> has been
+   removed.
+WARNING:MapLib:701 - Signal S<1> connected to top level port S<1> has been
+   removed.
+WARNING:MapLib:701 - Signal S<0> connected to top level port S<0> has been
+   removed.
+WARNING:MapLib:701 - Signal Clk25M connected to top level port Clk25M has been
+   removed.
+WARNING:PhysDesignRules:367 - The signal <Q<0>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Q<1>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Q<2>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network Q<2>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   Q<1>_IBUF,
+   Q<0>_IBUF,
+   XLXI_16/CEO,
+   XLXI_17/CEO
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 106 block(s) removed
+ 103 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_1" (FF) removed.
+ The signal "XLXN_35" is loadless and has been removed.
+  Loadless block "XLXI_17/I_36_105" (AND) removed.
+   The signal "XLXI_17/Q2" is loadless and has been removed.
+    Loadless block "XLXI_17/I_Q2" (FF) removed.
+     The signal "Clk25M_BUFGP" is loadless and has been removed.
+      Loadless block "Clk25M_BUFGP/BUFG" (CKBUF) removed.
+       The signal "Clk25M_BUFGP/IBUFG" is loadless and has been removed.
+        Loadless block "Clk25M_BUFGP/IBUFG" (CKBUF) removed.
+         The signal "Clk25M" is loadless and has been removed.
+          Loadless block "Clk25M" (PAD) removed.
+     The signal "XLXN_38" is loadless and has been removed.
+      Loadless block "XLXI_16/XLXI_1" (AND) removed.
+       The signal "XLXI_16/XLXN_40" is loadless and has been removed.
+        Loadless block "XLXI_16/XLXI_3" (BUF) removed.
+         The signal "XLXN_37" is loadless and has been removed.
+          Loadless block "XLXI_19" (BUF) removed.
+           The signal "Clk_IBUF" is loadless and has been removed.
+            Loadless block "Clk_IBUF" (BUF) removed.
+             The signal "Clk" is loadless and has been removed.
+              Loadless block "Clk" (PAD) removed.
+       The signal "XLXI_16/TC_1" is loadless and has been removed.
+        Loadless block "XLXI_16/I_36_1140" (MUX) removed.
+         The signal "XLXI_16/XLXN_39" is loadless and has been removed.
+          Loadless block "XLXI_16/I_36_1269" (ZERO) removed.
+         The signal "XLXI_16/I_36_1140_rt" is loadless and has been removed.
+          Loadless block "XLXI_16/I_36_1140_rt" (ROM) removed.
+           The signal "XLXI_16/Q<15>" is loadless and has been removed.
+            Loadless block "XLXI_16/I_36_1113" (FF) removed.
+             The signal "XLXN_34" is loadless and has been removed.
+              Loadless block "XLXI_18" (AND) removed.
+             The signal "XLXI_16/TQ15" is loadless and has been removed.
+              Loadless block "XLXI_16/I_36_1112" (XOR) removed.
+     The signal "XLXI_17/D2" is loadless and has been removed.
+      Loadless block "XLXI_17/I_36_78" (XOR) removed.
+       The signal "XLXI_17/AX2" is loadless and has been removed.
+        Loadless block "XLXI_17/I_36_77" (AND) removed.
+         The signal "XLXI_17/Q0" is loadless and has been removed.
+          Loadless block "XLXI_17/I_Q0" (FF) removed.
+           The signal "XLXI_17/D0" is loadless and has been removed.
+            Loadless block "XLXI_17/I_36_83" (BUF) removed.
+         The signal "XLXI_17/Q1" is loadless and has been removed.
+          Loadless block "XLXI_17/I_Q1" (FF) removed.
+           The signal "XLXI_17/D1" is loadless and has been removed.
+            Loadless block "XLXI_17/I_36_86" (XOR) removed.
+             The signal "XLXI_17/AX1" is loadless and has been removed.
+              Loadless block "XLXI_17/I_36_81" (AND) removed.
+               The signal "XLXI_17/Q3" is loadless and has been removed.
+                Loadless block "XLXI_17/I_Q3" (FF) removed.
+                 The signal "XLXI_17/D3" is loadless and has been removed.
+                  Loadless block "XLXI_17/I_36_73" (XOR) removed.
+                   The signal "XLXI_17/OX3" is loadless and has been removed.
+                    Loadless block "XLXI_17/I_36_75" (OR) removed.
+                     The signal "XLXI_17/AO3A" is loadless and has been removed.
+                      Loadless block "XLXI_17/I_36_88" (AND) removed.
+                     The signal "XLXI_17/A03B" is loadless and has been removed.
+                      Loadless block "XLXI_17/I_36_70" (AND) removed.
+ The signal "S_2_IBUF" is loadless and has been removed.
+  Loadless block "S_2_IBUF" (BUF) removed.
+   The signal "S<2>" is loadless and has been removed.
+    Loadless block "S<2>" (PAD) removed.
+Loadless block "XLXI_2" (FF) removed.
+ The signal "XLXN_15" is loadless and has been removed.
+  Loadless block "XLXI_8" (OR) removed.
+   The signal "XLXN_20" is loadless and has been removed.
+    Loadless block "XLXI_13" (AND) removed.
+     The signal "S_1_IBUF" is loadless and has been removed.
+      Loadless block "S_1_IBUF" (BUF) removed.
+       The signal "S<1>" is loadless and has been removed.
+        Loadless block "S<1>" (PAD) removed.
+   The signal "XLXN_21" is loadless and has been removed.
+    Loadless block "XLXI_12" (AND) removed.
+Loadless block "XLXI_3" (FF) removed.
+ The signal "XLXN_17" is loadless and has been removed.
+  Loadless block "XLXI_9" (OR) removed.
+   The signal "XLXN_22" is loadless and has been removed.
+    Loadless block "XLXI_15" (AND) removed.
+     The signal "S_0_IBUF" is loadless and has been removed.
+      Loadless block "S_0_IBUF" (BUF) removed.
+       The signal "S<0>" is loadless and has been removed.
+        Loadless block "S<0>" (PAD) removed.
+   The signal "XLXN_23" is loadless and has been removed.
+    Loadless block "XLXI_14" (AND) removed.
+The signal "XLXI_16/C0" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_6" (XOR) removed.
+  The signal "XLXI_16/TQ0" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_36" (FF) removed.
+    The signal "XLXI_16/Q<0>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_4_rt" (ROM) removed.
+      The signal "XLXI_16/I_36_4_rt" is sourceless and has been removed.
+       Sourceless block "XLXI_16/I_36_4" (MUX) removed.
+        The signal "XLXI_16/I_36_4/O" is sourceless and has been removed.
+The signal "XLXI_16/CEO" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1141_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1100" (XOR) removed.
+  The signal "XLXI_16/TQ14" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1101" (FF) removed.
+    The signal "XLXI_16/Q<14>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1141_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1141" (MUX) removed.
+  The signal "XLXI_16/I_36_1141/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1142_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1115" (XOR) removed.
+  The signal "XLXI_16/TQ13" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1114" (FF) removed.
+    The signal "XLXI_16/Q<13>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1142_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1142" (MUX) removed.
+  The signal "XLXI_16/I_36_1142/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1143_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1103" (XOR) removed.
+  The signal "XLXI_16/TQ12" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1102" (FF) removed.
+    The signal "XLXI_16/Q<12>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1143_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1143" (MUX) removed.
+  The signal "XLXI_16/I_36_1143/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1144_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1117" (XOR) removed.
+  The signal "XLXI_16/TQ11" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1116" (FF) removed.
+    The signal "XLXI_16/Q<11>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1144_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1144" (MUX) removed.
+  The signal "XLXI_16/I_36_1144/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1145_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1105" (XOR) removed.
+  The signal "XLXI_16/TQ10" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1104" (FF) removed.
+    The signal "XLXI_16/Q<10>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1145_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1145" (MUX) removed.
+  The signal "XLXI_16/I_36_1145/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1146_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1119" (XOR) removed.
+  The signal "XLXI_16/TQ9" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1118" (FF) removed.
+    The signal "XLXI_16/Q<9>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1146_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1146" (MUX) removed.
+  The signal "XLXI_16/I_36_1146/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_1147_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_1106" (XOR) removed.
+  The signal "XLXI_16/TQ8" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_1095" (FF) removed.
+    The signal "XLXI_16/Q<8>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_1147_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_1147" (MUX) removed.
+  The signal "XLXI_16/I_36_1147/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_233_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_226" (XOR) removed.
+  The signal "XLXI_16/TQ2" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_224" (FF) removed.
+    The signal "XLXI_16/Q<2>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_233_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_233" (MUX) removed.
+  The signal "XLXI_16/I_36_233/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_246_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_239" (XOR) removed.
+  The signal "XLXI_16/TQ3" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_237" (FF) removed.
+    The signal "XLXI_16/Q<3>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_246_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_246" (MUX) removed.
+  The signal "XLXI_16/I_36_246/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_259_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_252" (XOR) removed.
+  The signal "XLXI_16/TQ4" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_250" (FF) removed.
+    The signal "XLXI_16/Q<4>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_259_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_259" (MUX) removed.
+  The signal "XLXI_16/I_36_259/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_26_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_28" (XOR) removed.
+  The signal "XLXI_16/TQ1" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_35" (FF) removed.
+    The signal "XLXI_16/Q<1>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_26_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_26" (MUX) removed.
+  The signal "XLXI_16/I_36_26/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_272_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_265" (XOR) removed.
+  The signal "XLXI_16/TQ5" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_263" (FF) removed.
+    The signal "XLXI_16/Q<5>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_272_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_272" (MUX) removed.
+  The signal "XLXI_16/I_36_272/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_285_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_278" (XOR) removed.
+  The signal "XLXI_16/TQ6" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_276" (FF) removed.
+    The signal "XLXI_16/Q<6>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_285_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_285" (MUX) removed.
+  The signal "XLXI_16/I_36_285/O" is sourceless and has been removed.
+The signal "XLXI_16/I_36_298_rt" is sourceless and has been removed.
+ Sourceless block "XLXI_16/I_36_291" (XOR) removed.
+  The signal "XLXI_16/TQ7" is sourceless and has been removed.
+   Sourceless block "XLXI_16/I_36_289" (FF) removed.
+    The signal "XLXI_16/Q<7>" is sourceless and has been removed.
+     Sourceless block "XLXI_16/I_36_298_rt" (ROM) removed.
+ Sourceless block "XLXI_16/I_36_298" (MUX) removed.
+  The signal "XLXI_16/I_36_298/O" is sourceless and has been removed.
+The signal "XLXI_17/CEO" is sourceless and has been removed.
+Unused block "XLXI_16/I_36_923" (ONE) removed.
+Unused block "XLXI_16/XLXI_2" (AND) removed.
+Unused block "XLXI_17/I_36_99" (AND) removed.
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Q<0>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Q<1>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Q<2>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

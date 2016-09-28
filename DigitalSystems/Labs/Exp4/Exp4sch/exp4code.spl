@@ -1,0 +1,10 @@
+[Inputs]
+=X[2:0]=
+=Y[2:0]=
+[Outputs]
+Cout
+=S[2:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel exp4code
+

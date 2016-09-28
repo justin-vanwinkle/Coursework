@@ -1,0 +1,3 @@
+MODULE orTestBench
+SUBMODULE orGate
+INSTANCE UUT

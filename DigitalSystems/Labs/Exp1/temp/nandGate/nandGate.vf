@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : sch2verilog
+//  /   /         Filename : nandGate.vf
+// /___/   /\     Timestamp : 01/21/2015 13:24:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx92i\bin\nt\sch2verilog.exe -intstyle ise -family spartan3e -w C:/Users/Student/Desktop/temp/nandGate/nandGate.sch nandGate.vf
+//Design Name: nandGate
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module nandGate(A, 
+                B, 
+                O);
+
+    input A;
+    input B;
+   output O;
+   
+   
+   NAND2 XLXI_1 (.I0(B), 
+                 .I1(A), 
+                 .O(O));
+endmodule

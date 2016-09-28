@@ -1,0 +1,10 @@
+Command line:
+   lab6_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49712
+
+Sun Jul 12 12:29:17 2015
+
+
+ Elaboration Time: 0.125 sec

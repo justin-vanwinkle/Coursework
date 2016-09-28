@@ -1,0 +1,11 @@
+sch2verilog -intstyle ise -family spartan3e   -w "C:/Users/Student/Desktop/temp/nandGate/nandGate.sch" nandGate.vf
+xst -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -ifn nandGate.xst -ofn nandGate.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "nandGate.ngc" nandGate.ngd
+map -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o nandGate_map.ncd nandGate.ngd nandGate.pcf
+par -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -w -intstyle ise -ol std -t 1 nandGate_map.ncd nandGate.ncd nandGate.pcf
+trce -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -e 3 -s 5 -xml nandGate nandGate.ncd -o nandGate.twr nandGate.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -dd _ngo -nt timestamp -uc "nandGate.ucf" -p xc3s100e-cp132-5 "nandGate.ngc" nandGate.ngd
+map -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o nandGate_map.ncd nandGate.ngd nandGate.pcf
+par -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -w -intstyle ise -ol std -t 1 nandGate_map.ncd nandGate.ncd nandGate.pcf
+trce -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -e 3 -s 5 -xml nandGate nandGate.ncd -o nandGate.twr nandGate.pcf -ucf nandGate.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/nandGate/nandGate.ise" -intstyle ise -f nandGate.ut nandGate.ncd

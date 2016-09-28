@@ -1,0 +1,8 @@
+V3 7
+FL C:/Users/Student/Desktop/Lab1/OrCode/codeOr.v 2015/01/28.12:16:59 J.36
+MO work/codeOr FL C:/Users/Student/Desktop/Lab1/OrCode/codeOr.v
+FL C:/Users/Student/Desktop/Lab1/OrCode/orTestBench.tfw 2015/01/28.12:20:11 J.36
+MO work/orTestBench FL C:/Users/Student/Desktop/Lab1/OrCode/orTestBench.tfw \
+      MI codeOr
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

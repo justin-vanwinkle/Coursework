@@ -1,0 +1,3 @@
+verilog work "mydecoder24vlog.v"
+verilog work "mydecoder38vlog.v"
+verilog work "lab6.v"

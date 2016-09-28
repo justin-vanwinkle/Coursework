@@ -1,0 +1,10 @@
+V3 12
+FL C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.vf 2015/01/28.13:04:18 J.36
+MO work/part4sch2 FL C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.vf MI AND2 \
+      MI INV MI NAND2 MI OR2 MI XOR2
+FL C:/Users/Student/Desktop/Lab1/part4sch2/part4schTestBench.tfw 2015/01/28.13:05:23 J.36
+MO work/part4schTestBench \
+      FL C:/Users/Student/Desktop/Lab1/part4sch2/part4schTestBench.tfw \
+      MI part4sch2
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

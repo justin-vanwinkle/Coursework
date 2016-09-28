@@ -1,0 +1,3 @@
+verilog work "part4sch2.vf"
+verilog work "part4schTestBench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

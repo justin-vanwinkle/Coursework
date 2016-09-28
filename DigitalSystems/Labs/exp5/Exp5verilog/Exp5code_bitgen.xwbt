@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\justi_000\Dropbox\Justin\Academia\Current Courses\Digital\Exp5verilog\Exp5code.ncd
+OUTFILE=C:\Users\justi_000\Dropbox\Justin\Academia\Current Courses\Digital\Exp5verilog\Exp5code.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\justi_000\Dropbox\Justin\Academia\Current Courses\Digital\Exp5verilog
+LICENSE=WebPack
+USER_INFO=210997740_0_0_132

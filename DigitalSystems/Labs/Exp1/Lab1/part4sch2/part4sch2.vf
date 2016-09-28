@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : sch2verilog
+//  /   /         Filename : part4sch2.vf
+// /___/   /\     Timestamp : 01/28/2015 13:04:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx92i\bin\nt\sch2verilog.exe -intstyle ise -family spartan3e -w C:/Users/Student/Desktop/Lab1/part4sch2/part4sch2.sch part4sch2.vf
+//Design Name: part4sch2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module part4sch2(A, 
+                 B, 
+                 S, 
+                 W, 
+                 X, 
+                 Y, 
+                 Z);
+
+    input A;
+    input B;
+   output S;
+   output W;
+   output X;
+   output Y;
+   output Z;
+   
+   
+   INV XLXI_1 (.I(A), 
+               .O(S));
+   AND2 XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(W));
+   OR2 XLXI_3 (.I0(B), 
+               .I1(A), 
+               .O(X));
+   NAND2 XLXI_4 (.I0(B), 
+                 .I1(A), 
+                 .O(Y));
+   XOR2 XLXI_5 (.I0(B), 
+                .I1(A), 
+                .O(Z));
+endmodule

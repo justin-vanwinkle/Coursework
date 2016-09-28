@@ -1,0 +1,3 @@
+MODULE part4schTestBench
+SUBMODULE part4sch2
+INSTANCE UUT

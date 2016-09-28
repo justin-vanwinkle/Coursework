@@ -1,0 +1,23 @@
+//NET "Clock" CLOCK_DEDICATED_ROUTE = FALSE;		//clock overide
+NET "C25M" LOC = "B8";	//clk
+
+NET "D[0]" LOC = "P11"; 	//sw0
+NET "D[1]" LOC = "L3";		//sw1
+NET "D[2]" LOC = "K3"; 		//sw2
+NET "D[3]" LOC = "B4"; 		//sw3
+//NET "D[0]" LOC = "G3";		//sw4
+//NET "D[1]" LOC = "F3";		//sw5
+NET "Shift" LOC = "E2";		//sw6
+NET "Load" LOC = "N3";		//sw7
+
+NET "Clock" LOC = "G12";		//btn0
+//NET "WCLK" LOC = "C11";		//btn1
+
+NET "O[0]" LOC = "M5";			//led0
+NET "O[1]" LOC = "M11";			//led1
+NET "O[2]" LOC = "P7";			//led2
+NET "O[3]" LOC = "P6";			//led3
+//NET "out[4]" LOC = "N5";		//led4
+//NET "out[5]" LOC = "N4";		//led5
+//NET "out[6]" LOC = "P4";		//led6
+//NET "out[7]" LOC = "G1";		//led7

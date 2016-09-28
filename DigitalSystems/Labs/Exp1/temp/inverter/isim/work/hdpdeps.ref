@@ -1,0 +1,8 @@
+V3 8
+FL C:/Users/Student/Desktop/temp/inverter/invsch.vf 2015/01/21.14:06:30 J.36
+MO work/invsch FL C:/Users/Student/Desktop/temp/inverter/invsch.vf MI INV
+FL C:/Users/Student/Desktop/temp/inverter/invTestBench.tfw 2015/01/21.14:07:51 J.36
+MO work/invTestBench FL C:/Users/Student/Desktop/temp/inverter/invTestBench.tfw \
+      MI invsch
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

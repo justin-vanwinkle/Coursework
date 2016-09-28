@@ -1,0 +1,36 @@
+ command line:
+   ./orTestBench_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  49914
+
+Wed Jan 21 13:43:53 2015
+
+Total Line Count : 52
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 135.746 Meg. 
+
+ Total Signals          : 15
+ Total Nets             : 11
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 92
+ntrace select -o on -n /orTestBench/O 
+ntrace select -o on -n /orTestBench/A 
+ntrace select -o on -n /orTestBench/B 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0312 sec.
+
+ Estimate current memory usage : 144.134 Meg. 
+
+Wed Jan 21 13:44:57 2015
+

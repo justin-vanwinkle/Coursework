@@ -1,0 +1,8 @@
+V3 8
+FL C:/Users/Student/Desktop/temp/nandGate/nandGate.vf 2015/01/21.13:24:52 J.36
+MO work/nandGate FL C:/Users/Student/Desktop/temp/nandGate/nandGate.vf MI NAND2
+FL C:/Users/Student/Desktop/temp/nandGate/nandTestBench.tfw 2015/01/21.13:27:43 J.36
+MO work/nandTestBench FL C:/Users/Student/Desktop/temp/nandGate/nandTestBench.tfw \
+      MI nandGate
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

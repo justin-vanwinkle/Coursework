@@ -1,0 +1,3 @@
+verilog work "nandGate.vf"
+verilog work "nandTestBench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

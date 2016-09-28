@@ -1,0 +1,17 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Jul 19 11:35:50 2015
+
+drc -z sch.ncd sch.pcf
+
+WARNING:PhysDesignRules:367 - The signal <O_0_OBUF/XLXI_1/RAM32X2S0/RAM32X1S0/F>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <O_1_OBUF/XLXI_1/RAM32X2S0/RAM32X1S1/F>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <O_2_OBUF/XLXI_1/RAM32X2S1/RAM32X1S0/F>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <O_3_OBUF/XLXI_1/RAM32X2S1/RAM32X1S1/F>
+   is incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

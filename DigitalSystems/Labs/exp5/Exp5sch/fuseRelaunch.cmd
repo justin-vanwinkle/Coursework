@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp5sch/schematic_schematic_sch_tb_isim_beh.exe" -prj "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp5sch/schematic_schematic_sch_tb_beh.prj" "work.schematic_schematic_sch_tb" "work.glbl" 

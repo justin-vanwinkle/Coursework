@@ -1,0 +1,3 @@
+verilog work "twoInFiveOut.v"
+verilog work "part4TestBench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

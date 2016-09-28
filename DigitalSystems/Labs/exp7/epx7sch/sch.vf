@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sch.vf
+// /___/   /\     Timestamp : 07/19/2015 11:27:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/exp7/epx7sch/sch.vf" -w "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/exp7/epx7sch/sch.sch"
+//Design Name: sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module sch(A, 
+           D, 
+           WCLK, 
+           WE, 
+           O);
+
+    input [3:0] A;
+    input [3:0] D;
+    input WCLK;
+    input WE;
+   output [3:0] O;
+   
+   wire XLXN_1;
+   
+   RAM32X4S #( .INIT_00(32'h00000000), .INIT_01(32'h00000000), 
+         .INIT_02(32'h00000000), .INIT_03(32'h00000000) ) XLXI_1 (.A0(A[0]), 
+                    .A1(A[1]), 
+                    .A2(A[2]), 
+                    .A3(A[3]), 
+                    .A4(XLXN_1), 
+                    .D0(D[0]), 
+                    .D1(D[1]), 
+                    .D2(D[2]), 
+                    .D3(D[3]), 
+                    .WCLK(WCLK), 
+                    .WE(WE), 
+                    .O0(O[0]), 
+                    .O1(O[1]), 
+                    .O2(O[2]), 
+                    .O3(O[3]));
+   GND  XLXI_2 (.G(XLXN_1));
+endmodule

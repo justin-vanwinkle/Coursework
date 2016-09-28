@@ -1,0 +1,10 @@
+xst -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -ifn codeXOR.xst -ofn codeXOR.syr
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "codeXOR.ngc" codeXOR.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeXOR_map.ncd codeXOR.ngd codeXOR.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -w -intstyle ise -ol std -t 1 codeXOR_map.ncd codeXOR.ncd codeXOR.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -e 3 -s 5 -xml codeXOR codeXOR.ncd -o codeXOR.twr codeXOR.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -dd _ngo -nt timestamp -uc "codeXOR.ucf" -p xc3s100e-cp132-5 "codeXOR.ngc" codeXOR.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeXOR_map.ncd codeXOR.ngd codeXOR.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -w -intstyle ise -ol std -t 1 codeXOR_map.ncd codeXOR.ncd codeXOR.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -e 3 -s 5 -xml codeXOR codeXOR.ncd -o codeXOR.twr codeXOR.pcf -ucf codeXOR.ucf
+bitgen -ise "C:/Users/Student/Desktop/Lab1/xorCode/xorCode.ise" -intstyle ise -f codeXOR.ut codeXOR.ncd

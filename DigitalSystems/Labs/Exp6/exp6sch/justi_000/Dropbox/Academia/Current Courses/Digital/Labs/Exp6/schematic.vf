@@ -1,0 +1,226 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schematic.vf
+// /___/   /\     Timestamp : 07/11/2015 11:56:31
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6sch/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6" -intstyle ise -family spartan3e -verilog "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6sch/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/schematic.vf" -w "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6sch/schematic.sch"
+//Design Name: schematic
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR7_MXILINX_schematic(I0, 
+                             I1, 
+                             I2, 
+                             I3, 
+                             I4, 
+                             I5, 
+                             I6, 
+                             O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+   output O;
+   
+   wire I36;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_89 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .I3(I6), 
+                .O(I36));
+   OR4  I_36_90 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I36), 
+                .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_110 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(I6), 
+                  .O(I36));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_111 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I36), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module D3_8E_MXILINX_schematic(A0, 
+                               A1, 
+                               A2, 
+                               E, 
+                               D0, 
+                               D1, 
+                               D2, 
+                               D3, 
+                               D4, 
+                               D5, 
+                               D6, 
+                               D7);
+
+    input A0;
+    input A1;
+    input A2;
+    input E;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   
+   AND4  I_36_30 (.I0(A2), 
+                 .I1(A1), 
+                 .I2(A0), 
+                 .I3(E), 
+                 .O(D7));
+   AND4B1  I_36_31 (.I0(A0), 
+                   .I1(A2), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D6));
+   AND4B1  I_36_32 (.I0(A1), 
+                   .I1(A2), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D5));
+   AND4B2  I_36_33 (.I0(A1), 
+                   .I1(A0), 
+                   .I2(A2), 
+                   .I3(E), 
+                   .O(D4));
+   AND4B1  I_36_34 (.I0(A2), 
+                   .I1(A0), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D3));
+   AND4B2  I_36_35 (.I0(A2), 
+                   .I1(A0), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D2));
+   AND4B2  I_36_36 (.I0(A2), 
+                   .I1(A1), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D1));
+   AND4B3  I_36_37 (.I0(A2), 
+                   .I1(A1), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D0));
+endmodule
+`timescale 1ns / 1ps
+
+module schematic(A, 
+                 B, 
+                 C, 
+                 W, 
+                 X, 
+                 Y, 
+                 Z, 
+                 F, 
+                 G);
+
+    input A;
+    input B;
+    input C;
+    input W;
+    input X;
+    input Y;
+    input Z;
+   output F;
+   output G;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_26;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   D3_8E_MXILINX_schematic  XLXI_1 (.A0(C), 
+                                   .A1(B), 
+                                   .A2(A), 
+                                   .E(C), 
+                                   .D0(), 
+                                   .D1(XLXN_1), 
+                                   .D2(), 
+                                   .D3(), 
+                                   .D4(), 
+                                   .D5(XLXN_2), 
+                                   .D6(), 
+                                   .D7(XLXN_3));
+   OR3  XLXI_2 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(F));
+   (* HU_SET = "XLXI_3_1" *) 
+   D3_8E_MXILINX_schematic  XLXI_3 (.A0(Z), 
+                                   .A1(Y), 
+                                   .A2(X), 
+                                   .E(XLXN_16), 
+                                   .D0(), 
+                                   .D1(), 
+                                   .D2(XLXN_17), 
+                                   .D3(), 
+                                   .D4(), 
+                                   .D5(), 
+                                   .D6(XLXN_26), 
+                                   .D7());
+   (* HU_SET = "XLXI_4_2" *) 
+   D3_8E_MXILINX_schematic  XLXI_4 (.A0(Z), 
+                                   .A1(Y), 
+                                   .A2(X), 
+                                   .E(W), 
+                                   .D0(XLXN_20), 
+                                   .D1(XLXN_21), 
+                                   .D2(XLXN_22), 
+                                   .D3(XLXN_23), 
+                                   .D4(), 
+                                   .D5(), 
+                                   .D6(XLXN_24), 
+                                   .D7());
+   INV  XLXI_8 (.I(W), 
+               .O(XLXN_16));
+   (* HU_SET = "XLXI_9_3" *) 
+   OR7_MXILINX_schematic  XLXI_9 (.I0(XLXN_24), 
+                                 .I1(XLXN_23), 
+                                 .I2(XLXN_22), 
+                                 .I3(XLXN_21), 
+                                 .I4(XLXN_20), 
+                                 .I5(XLXN_26), 
+                                 .I6(XLXN_17), 
+                                 .O(G));
+endmodule

@@ -1,0 +1,3 @@
+MODULE xorTestBench
+SUBMODULE codeXOR
+INSTANCE UUT

@@ -1,0 +1,10 @@
+xst -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -ifn twoInFiveOut.xst -ofn twoInFiveOut.syr
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "twoInFiveOut.ngc" twoInFiveOut.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o twoInFiveOut_map.ncd twoInFiveOut.ngd twoInFiveOut.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -w -intstyle ise -ol std -t 1 twoInFiveOut_map.ncd twoInFiveOut.ncd twoInFiveOut.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -e 3 -s 5 -xml twoInFiveOut twoInFiveOut.ncd -o twoInFiveOut.twr twoInFiveOut.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -dd _ngo -nt timestamp -uc "twoInFiveOut.ucf" -p xc3s100e-cp132-5 "twoInFiveOut.ngc" twoInFiveOut.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o twoInFiveOut_map.ncd twoInFiveOut.ngd twoInFiveOut.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -w -intstyle ise -ol std -t 1 twoInFiveOut_map.ncd twoInFiveOut.ncd twoInFiveOut.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -e 3 -s 5 -xml twoInFiveOut twoInFiveOut.ncd -o twoInFiveOut.twr twoInFiveOut.pcf -ucf twoInFiveOut.ucf
+bitgen -ise "C:/Users/Student/Desktop/Lab1/part4/part4.ise" -intstyle ise -f twoInFiveOut.ut twoInFiveOut.ncd

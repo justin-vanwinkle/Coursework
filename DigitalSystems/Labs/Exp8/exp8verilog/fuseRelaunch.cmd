@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp8/exp8verilog/vtest_isim_beh.exe" -prj "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp8/exp8verilog/vtest_beh.prj" "work.vtest" "work.glbl" 

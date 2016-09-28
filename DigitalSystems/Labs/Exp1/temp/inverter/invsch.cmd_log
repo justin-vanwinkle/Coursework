@@ -1,0 +1,11 @@
+sch2verilog -intstyle ise -family spartan3e   -w "C:/Users/Student/Desktop/temp/inverter/invsch.sch" invsch.vf
+xst -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -ifn invsch.xst -ofn invsch.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "invsch.ngc" invsch.ngd
+map -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o invsch_map.ncd invsch.ngd invsch.pcf
+par -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -w -intstyle ise -ol std -t 1 invsch_map.ncd invsch.ncd invsch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -e 3 -s 5 -xml invsch invsch.ncd -o invsch.twr invsch.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -dd _ngo -nt timestamp -uc "invsch.ucf" -p xc3s100e-cp132-5 "invsch.ngc" invsch.ngd
+map -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o invsch_map.ncd invsch.ngd invsch.pcf
+par -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -w -intstyle ise -ol std -t 1 invsch_map.ncd invsch.ncd invsch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -e 3 -s 5 -xml invsch invsch.ncd -o invsch.twr invsch.pcf -ucf invsch.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/inverter/inverter.ise" -intstyle ise -f invsch.ut invsch.ncd

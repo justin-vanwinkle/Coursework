@@ -1,0 +1,10 @@
+xst -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -ifn part3sch.xst -ofn part3sch.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "part3sch.ngc" part3sch.ngd
+map -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o part3sch_map.ncd part3sch.ngd part3sch.pcf
+par -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -w -intstyle ise -ol std -t 1 part3sch_map.ncd part3sch.ncd part3sch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -e 3 -s 5 -xml part3sch part3sch.ncd -o part3sch.twr part3sch.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -dd _ngo -nt timestamp -uc "part3sch.ucf" -p xc3s100e-cp132-5 "part3sch.ngc" part3sch.ngd
+map -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o part3sch_map.ncd part3sch.ngd part3sch.pcf
+par -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -w -intstyle ise -ol std -t 1 part3sch_map.ncd part3sch.ncd part3sch.pcf
+trce -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -e 3 -s 5 -xml part3sch part3sch.ncd -o part3sch.twr part3sch.pcf -ucf part3sch.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/Lab1Part3/Lab1Part3.ise" -intstyle ise -f part3sch.ut part3sch.ncd

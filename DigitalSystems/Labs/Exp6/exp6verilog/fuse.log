@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/test_isim_beh.exe -prj C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/mydecoder24vlog.v" into library work
+WARNING:HDLCompiler:98 - "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/mydecoder24vlog.v" Line 25: out was previously declared with a range
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/mydecoder38vlog.v" into library work
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/lab6.v" into library work
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/mydecoder38vlog.v" Line 28: Size mismatch in connection of port <out>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/mydecoder38vlog.v" Line 27: Size mismatch in connection of port <out>. Formal port size is 1-bit while actual signal size is 4-bit.
+Completed static elaboration
+Compiling module mydecoder24vlog
+Compiling module mydecoder38vlog
+Compiling module lab6
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp6/exp6verilog/test_isim_beh.exe
+Fuse Memory Usage: 26300 KB
+Fuse CPU Usage: 468 ms

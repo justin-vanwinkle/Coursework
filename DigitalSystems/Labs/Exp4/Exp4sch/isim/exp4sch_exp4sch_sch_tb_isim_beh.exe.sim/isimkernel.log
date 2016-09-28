@@ -1,0 +1,29 @@
+Command line:
+   exp4sch_exp4sch_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51091
+
+Fri Jul 03 18:35:01 2015
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 1013.58 Meg
+
+ Total Signals          : 67
+ Total Nets             : 31
+ Total Signal Drivers   : 19
+ Total Blocks           : 15
+ Total Primitive Blocks : 13
+ Total Processes        : 21
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 117
+Total Line Count : 29
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 384.369 Meg
+
+Fri Jul 03 18:37:22 2015
+

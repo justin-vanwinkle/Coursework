@@ -1,0 +1,21 @@
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+xst -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -ifn cNand.xst -ofn cNand.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "cNand.ngc" cNand.ngd
+map -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o cNand_map.ncd cNand.ngd cNand.pcf
+par -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -w -intstyle ise -ol std -t 1 cNand_map.ncd cNand.ncd cNand.pcf
+trce -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -e 3 -s 5 -xml cNand cNand.ncd -o cNand.twr cNand.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cNand.ucf" -p xc3s100e-cp132-5 "cNand.ngc" cNand.ngd
+map -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o cNand_map.ncd cNand.ngd cNand.pcf
+par -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -w -intstyle ise -ol std -t 1 cNand_map.ncd cNand.ncd cNand.pcf
+trce -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -e 3 -s 5 -xml cNand cNand.ncd -o cNand.twr cNand.pcf -ucf cNand.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/codeNand/codeNand.ise" -intstyle ise -f cNand.ut cNand.ncd

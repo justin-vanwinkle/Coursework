@@ -1,0 +1,8 @@
+V3 8
+FL C:/Users/Student/Desktop/temp/xor/xorsch.vf 2015/01/21.13:54:35 J.36
+MO work/xorsch FL C:/Users/Student/Desktop/temp/xor/xorsch.vf MI XOR2
+FL C:/Users/Student/Desktop/temp/xor/xorTestBench.tfw 2015/01/21.13:56:47 J.36
+MO work/xorTestBench FL C:/Users/Student/Desktop/temp/xor/xorTestBench.tfw \
+      MI xorsch
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

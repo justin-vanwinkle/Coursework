@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : invTestBench.ant
+// /___/   /\     Timestamp : Wed Jan 28 12:33:53 2015
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: invTestBench
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module invTestBench;
+    reg A = 1'b0;
+    wire O;
+
+
+    codeInv UUT (
+        .A(A),
+        .O(O));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process
+        #0;
+        ANNOTATE_O;
+        forever begin
+            #50;
+            ANNOTATE_O;
+            #50;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\Student\\Desktop\\Lab1\\invCode\\invTestBench.ano");
+        #1000 // Final time:  1000 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  500ns
+        #500;
+        A = 1'b1;
+    end
+
+    task ANNOTATE_O;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,O,%b]", $time, O);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

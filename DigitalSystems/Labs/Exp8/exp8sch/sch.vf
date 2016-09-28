@@ -1,0 +1,95 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sch.vf
+// /___/   /\     Timestamp : 07/23/2015 13:36:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp8/exp8sch/sch.vf" -w "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp8/exp8sch/sch.sch"
+//Design Name: sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module sch(CLK, 
+           D, 
+           R, 
+           S, 
+           O, 
+           Obar, 
+           P, 
+           Pbar, 
+           Q, 
+           Qbar);
+
+    input CLK;
+    input D;
+    input R;
+    input S;
+   output O;
+   output Obar;
+   output P;
+   output Pbar;
+   output Q;
+   output Qbar;
+   
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_41;
+   wire Obar_DUMMY;
+   wire Pbar_DUMMY;
+   wire O_DUMMY;
+   wire P_DUMMY;
+   wire Q_DUMMY;
+   wire Qbar_DUMMY;
+   
+   assign O = O_DUMMY;
+   assign Obar = Obar_DUMMY;
+   assign P = P_DUMMY;
+   assign Pbar = Pbar_DUMMY;
+   assign Q = Q_DUMMY;
+   assign Qbar = Qbar_DUMMY;
+   NOR2  XLXI_13 (.I0(Qbar_DUMMY), 
+                 .I1(R), 
+                 .O(Q_DUMMY));
+   NOR2  XLXI_14 (.I0(S), 
+                 .I1(Q_DUMMY), 
+                 .O(Qbar_DUMMY));
+   AND2  XLXI_15 (.I0(CLK), 
+                 .I1(R), 
+                 .O(XLXN_22));
+   AND2  XLXI_16 (.I0(CLK), 
+                 .I1(S), 
+                 .O(XLXN_23));
+   NOR2  XLXI_17 (.I0(Obar_DUMMY), 
+                 .I1(XLXN_22), 
+                 .O(O_DUMMY));
+   NOR2  XLXI_18 (.I0(XLXN_23), 
+                 .I1(O_DUMMY), 
+                 .O(Obar_DUMMY));
+   NOR2  XLXI_23 (.I0(Pbar_DUMMY), 
+                 .I1(XLXN_33), 
+                 .O(P_DUMMY));
+   NOR2  XLXI_24 (.I0(XLXN_34), 
+                 .I1(P_DUMMY), 
+                 .O(Pbar_DUMMY));
+   AND2  XLXI_25 (.I0(XLXN_41), 
+                 .I1(CLK), 
+                 .O(XLXN_33));
+   AND2  XLXI_26 (.I0(D), 
+                 .I1(CLK), 
+                 .O(XLXN_34));
+   INV  XLXI_27 (.I(D), 
+                .O(XLXN_41));
+endmodule

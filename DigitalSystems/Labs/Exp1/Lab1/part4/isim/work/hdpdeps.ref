@@ -1,0 +1,8 @@
+V3 7
+FL C:/Users/Student/Desktop/Lab1/part4/part4TestBench.tfw 2015/01/28.12:44:13 J.36
+MO work/part4TestBench FL C:/Users/Student/Desktop/Lab1/part4/part4TestBench.tfw \
+      MI twoInFiveOut
+FL C:/Users/Student/Desktop/Lab1/part4/twoInFiveOut.v 2015/01/28.12:42:17 J.36
+MO work/twoInFiveOut FL C:/Users/Student/Desktop/Lab1/part4/twoInFiveOut.v
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

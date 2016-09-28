@@ -1,0 +1,10 @@
+xst -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -ifn codeOr.xst -ofn codeOr.syr
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "codeOr.ngc" codeOr.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeOr_map.ncd codeOr.ngd codeOr.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -w -intstyle ise -ol std -t 1 codeOr_map.ncd codeOr.ncd codeOr.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -e 3 -s 5 -xml codeOr codeOr.ncd -o codeOr.twr codeOr.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -dd _ngo -nt timestamp -uc "codeOr.ucf" -p xc3s100e-cp132-5 "codeOr.ngc" codeOr.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeOr_map.ncd codeOr.ngd codeOr.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -w -intstyle ise -ol std -t 1 codeOr_map.ncd codeOr.ncd codeOr.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -e 3 -s 5 -xml codeOr codeOr.ncd -o codeOr.twr codeOr.pcf -ucf codeOr.ucf
+bitgen -ise "C:/Users/Student/Desktop/Lab1/OrCode/OrCode.ise" -intstyle ise -f codeOr.ut codeOr.ncd

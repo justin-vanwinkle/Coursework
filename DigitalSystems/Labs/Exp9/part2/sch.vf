@@ -1,0 +1,453 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sch.vf
+// /___/   /\     Timestamp : 07/30/2015 22:55:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp9/part2/sch.vf" -w "C:/Users/justi_000/Dropbox/Academia/Current Courses/Digital/Labs/Exp9/part2/sch.sch"
+//Design Name: sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CD4CE_MXILINX_sch(C, 
+                         CE, 
+                         CLR, 
+                         CEO, 
+                         Q0, 
+                         Q1, 
+                         Q2, 
+                         Q3, 
+                         TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire AO3A;
+   wire AX1;
+   wire AX2;
+   wire A03B;
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire OX3;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D0), 
+              .Q(Q0_DUMMY));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D1), 
+              .Q(Q1_DUMMY));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D2), 
+              .Q(Q2_DUMMY));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D3), 
+              .Q(Q3_DUMMY));
+   AND3  I_36_70 (.I0(Q2_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .O(A03B));
+   XOR2  I_36_73 (.I0(Q3_DUMMY), 
+                 .I1(OX3), 
+                 .O(D3));
+   OR2  I_36_75 (.I0(AO3A), 
+                .I1(A03B), 
+                .O(OX3));
+   AND2  I_36_77 (.I0(Q0_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .O(AX2));
+   XOR2  I_36_78 (.I0(Q2_DUMMY), 
+                 .I1(AX2), 
+                 .O(D2));
+   AND2B1  I_36_81 (.I0(Q3_DUMMY), 
+                   .I1(Q0_DUMMY), 
+                   .O(AX1));
+   INV  I_36_83 (.I(Q0_DUMMY), 
+                .O(D0));
+   XOR2  I_36_86 (.I0(Q1_DUMMY), 
+                 .I1(AX1), 
+                 .O(D1));
+   AND2  I_36_88 (.I0(Q3_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(AO3A));
+   AND2  I_36_99 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   AND4B2  I_36_105 (.I0(Q2_DUMMY), 
+                    .I1(Q1_DUMMY), 
+                    .I2(Q0_DUMMY), 
+                    .I3(Q3_DUMMY), 
+                    .O(TC_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CC16CE_MXILINX_sch(C, 
+                          CE, 
+                          CLR, 
+                          CEO, 
+                          Q, 
+                          TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output [15:0] Q;
+   output TC;
+   
+   wire C0;
+   wire C1;
+   wire C2;
+   wire C3;
+   wire C4;
+   wire C5;
+   wire C6;
+   wire C7;
+   wire C8;
+   wire C9;
+   wire C10;
+   wire C11;
+   wire C12;
+   wire C13;
+   wire C14;
+   wire C15;
+   wire TC_1;
+   wire TQ0;
+   wire TQ1;
+   wire TQ2;
+   wire TQ3;
+   wire TQ4;
+   wire TQ5;
+   wire TQ6;
+   wire TQ7;
+   wire TQ8;
+   wire TQ9;
+   wire TQ10;
+   wire TQ11;
+   wire TQ12;
+   wire TQ13;
+   wire TQ14;
+   wire TQ15;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire [15:0] Q_DUMMY;
+   
+   assign Q[15:0] = Q_DUMMY[15:0];
+   MUXCY_L  I_36_4 (.CI(C0), 
+                   .DI(XLXN_38), 
+                   .S(Q_DUMMY[0]), 
+                   .LO(C1));
+   XORCY  I_36_6 (.CI(C0), 
+                 .LI(Q_DUMMY[0]), 
+                 .O(TQ0));
+   MUXCY_L  I_36_26 (.CI(C1), 
+                    .DI(XLXN_38), 
+                    .S(Q_DUMMY[1]), 
+                    .LO(C2));
+   XORCY  I_36_28 (.CI(C1), 
+                  .LI(Q_DUMMY[1]), 
+                  .O(TQ1));
+   FDCE #( .INIT(1'b0) ) I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ1), 
+                 .Q(Q_DUMMY[1]));
+   FDCE #( .INIT(1'b0) ) I_36_36 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ0), 
+                 .Q(Q_DUMMY[0]));
+   FDCE #( .INIT(1'b0) ) I_36_224 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ2), 
+                  .Q(Q_DUMMY[2]));
+   XORCY  I_36_226 (.CI(C2), 
+                   .LI(Q_DUMMY[2]), 
+                   .O(TQ2));
+   MUXCY_L  I_36_233 (.CI(C2), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[2]), 
+                     .LO(C3));
+   FDCE #( .INIT(1'b0) ) I_36_237 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ3), 
+                  .Q(Q_DUMMY[3]));
+   XORCY  I_36_239 (.CI(C3), 
+                   .LI(Q_DUMMY[3]), 
+                   .O(TQ3));
+   MUXCY_L  I_36_246 (.CI(C3), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[3]), 
+                     .LO(C4));
+   FDCE #( .INIT(1'b0) ) I_36_250 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ4), 
+                  .Q(Q_DUMMY[4]));
+   XORCY  I_36_252 (.CI(C4), 
+                   .LI(Q_DUMMY[4]), 
+                   .O(TQ4));
+   MUXCY_L  I_36_259 (.CI(C4), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[4]), 
+                     .LO(C5));
+   FDCE #( .INIT(1'b0) ) I_36_263 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ5), 
+                  .Q(Q_DUMMY[5]));
+   XORCY  I_36_265 (.CI(C5), 
+                   .LI(Q_DUMMY[5]), 
+                   .O(TQ5));
+   MUXCY_L  I_36_272 (.CI(C5), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[5]), 
+                     .LO(C6));
+   FDCE #( .INIT(1'b0) ) I_36_276 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ6), 
+                  .Q(Q_DUMMY[6]));
+   XORCY  I_36_278 (.CI(C6), 
+                   .LI(Q_DUMMY[6]), 
+                   .O(TQ6));
+   MUXCY_L  I_36_285 (.CI(C6), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[6]), 
+                     .LO(C7));
+   FDCE #( .INIT(1'b0) ) I_36_289 (.C(C), 
+                  .CE(CE), 
+                  .CLR(CLR), 
+                  .D(TQ7), 
+                  .Q(Q_DUMMY[7]));
+   XORCY  I_36_291 (.CI(C7), 
+                   .LI(Q_DUMMY[7]), 
+                   .O(TQ7));
+   MUXCY_L  I_36_298 (.CI(C7), 
+                     .DI(XLXN_38), 
+                     .S(Q_DUMMY[7]), 
+                     .LO(C8));
+   GND  I_36_886 (.G(XLXN_38));
+   VCC  I_36_923 (.P(C0));
+   FDCE #( .INIT(1'b0) ) I_36_1095 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ8), 
+                   .Q(Q_DUMMY[8]));
+   XORCY  I_36_1100 (.CI(C14), 
+                    .LI(Q_DUMMY[14]), 
+                    .O(TQ14));
+   FDCE #( .INIT(1'b0) ) I_36_1101 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ14), 
+                   .Q(Q_DUMMY[14]));
+   FDCE #( .INIT(1'b0) ) I_36_1102 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ12), 
+                   .Q(Q_DUMMY[12]));
+   XORCY  I_36_1103 (.CI(C12), 
+                    .LI(Q_DUMMY[12]), 
+                    .O(TQ12));
+   FDCE #( .INIT(1'b0) ) I_36_1104 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ10), 
+                   .Q(Q_DUMMY[10]));
+   XORCY  I_36_1105 (.CI(C10), 
+                    .LI(Q_DUMMY[10]), 
+                    .O(TQ10));
+   XORCY  I_36_1106 (.CI(C8), 
+                    .LI(Q_DUMMY[8]), 
+                    .O(TQ8));
+   XORCY  I_36_1112 (.CI(C15), 
+                    .LI(Q_DUMMY[15]), 
+                    .O(TQ15));
+   FDCE #( .INIT(1'b0) ) I_36_1113 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ15), 
+                   .Q(Q_DUMMY[15]));
+   FDCE #( .INIT(1'b0) ) I_36_1114 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ13), 
+                   .Q(Q_DUMMY[13]));
+   XORCY  I_36_1115 (.CI(C13), 
+                    .LI(Q_DUMMY[13]), 
+                    .O(TQ13));
+   FDCE #( .INIT(1'b0) ) I_36_1116 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ11), 
+                   .Q(Q_DUMMY[11]));
+   XORCY  I_36_1117 (.CI(C11), 
+                    .LI(Q_DUMMY[11]), 
+                    .O(TQ11));
+   FDCE #( .INIT(1'b0) ) I_36_1118 (.C(C), 
+                   .CE(CE), 
+                   .CLR(CLR), 
+                   .D(TQ9), 
+                   .Q(Q_DUMMY[9]));
+   XORCY  I_36_1119 (.CI(C9), 
+                    .LI(Q_DUMMY[9]), 
+                    .O(TQ9));
+   MUXCY  I_36_1140 (.CI(C15), 
+                    .DI(XLXN_39), 
+                    .S(Q_DUMMY[15]), 
+                    .O(TC_1));
+   MUXCY_L  I_36_1141 (.CI(C14), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[14]), 
+                      .LO(C15));
+   MUXCY_L  I_36_1142 (.CI(C13), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[13]), 
+                      .LO(C14));
+   MUXCY_L  I_36_1143 (.CI(C12), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[12]), 
+                      .LO(C13));
+   MUXCY_L  I_36_1144 (.CI(C11), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[11]), 
+                      .LO(C12));
+   MUXCY_L  I_36_1145 (.CI(C10), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[10]), 
+                      .LO(C11));
+   MUXCY_L  I_36_1146 (.CI(C9), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[9]), 
+                      .LO(C10));
+   MUXCY_L  I_36_1147 (.CI(C8), 
+                      .DI(XLXN_39), 
+                      .S(Q_DUMMY[8]), 
+                      .LO(C9));
+   GND  I_36_1269 (.G(XLXN_39));
+   AND2  XLXI_1 (.I0(XLXN_40), 
+                .I1(TC_1), 
+                .O(TC));
+   AND3  XLXI_2 (.I0(XLXN_40), 
+                .I1(CE), 
+                .I2(TC_1), 
+                .O(CEO));
+   INV  XLXI_3 (.I(CLR), 
+               .O(XLXN_40));
+endmodule
+`timescale 1ns / 1ps
+
+module sch(Clk, 
+           Clk25M, 
+           Q, 
+           S);
+
+    input Clk;
+    input Clk25M;
+    input [2:0] Q;
+    input [2:0] S;
+   
+   wire XLXN_15;
+   wire XLXN_17;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire [2:0] Q_DUMMY;
+   
+   assign Q_DUMMY[2:0] = Q[2:0];
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(XLXN_35), 
+              .D(S[2]), 
+              .Q(Q_DUMMY[2]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(XLXN_35), 
+              .D(XLXN_15), 
+              .Q(Q_DUMMY[1]));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(XLXN_35), 
+              .D(XLXN_17), 
+              .Q(Q_DUMMY[0]));
+   OR2  XLXI_8 (.I0(XLXN_20), 
+               .I1(XLXN_21), 
+               .O(XLXN_15));
+   OR2  XLXI_9 (.I0(XLXN_22), 
+               .I1(XLXN_23), 
+               .O(XLXN_17));
+   AND2B1  XLXI_12 (.I0(S[2]), 
+                   .I1(S[1]), 
+                   .O(XLXN_21));
+   AND2B1  XLXI_13 (.I0(S[1]), 
+                   .I1(S[2]), 
+                   .O(XLXN_20));
+   AND2B1  XLXI_14 (.I0(S[1]), 
+                   .I1(S[0]), 
+                   .O(XLXN_23));
+   AND2B1  XLXI_15 (.I0(S[0]), 
+                   .I1(S[1]), 
+                   .O(XLXN_22));
+   (* HU_SET = "XLXI_16_0" *) 
+   CC16CE_MXILINX_sch  XLXI_16 (.C(Clk25M), 
+                               .CE(XLXN_34), 
+                               .CLR(XLXN_37), 
+                               .CEO(), 
+                               .Q(), 
+                               .TC(XLXN_38));
+   (* HU_SET = "XLXI_17_1" *) 
+   CD4CE_MXILINX_sch  XLXI_17 (.C(Clk25M), 
+                              .CE(XLXN_38), 
+                              .CLR(XLXN_37), 
+                              .CEO(), 
+                              .Q0(), 
+                              .Q1(), 
+                              .Q2(), 
+                              .Q3(), 
+                              .TC(XLXN_35));
+   AND2B1  XLXI_18 (.I0(XLXN_35), 
+                   .I1(Clk), 
+                   .O(XLXN_34));
+   INV  XLXI_19 (.I(Clk), 
+                .O(XLXN_37));
+endmodule

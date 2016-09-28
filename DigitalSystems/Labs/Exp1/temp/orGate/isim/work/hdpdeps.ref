@@ -1,0 +1,8 @@
+V3 8
+FL C:/Users/Student/Desktop/temp/orGate/orGate.vf 2015/01/21.13:36:36 J.36
+MO work/orGate FL C:/Users/Student/Desktop/temp/orGate/orGate.vf MI OR2
+FL C:/Users/Student/Desktop/temp/orGate/orTestBench.tfw 2015/01/21.13:38:12 J.36
+MO work/orTestBench FL C:/Users/Student/Desktop/temp/orGate/orTestBench.tfw \
+      MI orGate
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

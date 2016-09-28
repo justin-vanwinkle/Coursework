@@ -1,0 +1,57 @@
+ISim log file
+Running: C:\Users\justi_000\Dropbox\Justin\Academia\Current Courses\Digital\Exp3\Exp3VerilogTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp3/Exp3VerilogTest_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/X 0 -radix bin -value 1 -radix bin -time 4 ps -repeat 8 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/X 0 -radix bin -value 1 -radix bin -time 4 ps -repeat 8 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/B 0 -radix bin -value 1 -radix bin -time 2 ps -repeat 4 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/B 0 -radix bin -value 1 -radix bin -time 2 ps -repeat 4 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/A 0 -radix bin -value 1 -radix bin -time 1 ps -repeat 2 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/A 0 -radix bin -value 1 -radix bin -time 1 ps -repeat 2 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/A 0 -radix bin -value 1 -radix bin -time 1 ps -repeat 2 ps -cancel 32 ps
+# restart
+# run 32ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 32ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force remove /Exp3VerilogTest/Y
+# isim force remove /Exp3VerilogTest/X
+# isim force remove /Exp3VerilogTest/B
+# isim force remove /Exp3VerilogTest/A
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# restart
+# run 32ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# isim force remove /Exp3VerilogTest/Y
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/Y 0 -radix bin -value 1 -radix bin -time 8 ps -repeat 16 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/X 0 -radix bin -value 1 -radix bin -time 4 ps -repeat 8 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/X 0 -radix bin -value 1 -radix bin -time 4 ps -repeat 8 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/B 0 -radix bin -value 1 -radix bin -time 2 ps -repeat 4 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/B 0 -radix bin -value 1 -radix bin -time 2 ps -repeat 4 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/A 0 -radix bin -value 1 -radix bin -time 1 ps -repeat 2 ps -cancel 32 ps
+# isim force add /Exp3VerilogTest/A 0 -radix bin -value 1 -radix bin -time 1 ps -repeat 2 ps -cancel 32 ps
+# run 32ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Exp3.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Exp3Schematic.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Exp3Schematic.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Exp3Schematic.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Exp3Schematic.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Exp3Schematic.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Exp3Schematic.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Exp3Schematic.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Exp3Schematic.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Exp3Schematic.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Exp3Schematic.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Exp3Schematic.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Exp3Schematic.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Exp3Schematic.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Exp3Schematic.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Exp3Schematic.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Exp3Schematic.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Exp3Schematic.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Exp3Schematic.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Exp3Schematic.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Exp3Schematic.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Exp3Schematic.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Exp3Schematic.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Exp3Schematic_Exp3Schematic_sch_tb_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Exp3Schematic_Exp3Schematic_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Exp3Schematic_drc.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Exp3Schematic_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Exp3Schematic_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Exp3Schematic_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Exp3Schematic_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Exp3Schematic_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Exp3Schematic_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Exp3Schematic_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp3Schematic_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp3Schematic_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Exp3Schematic_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Exp3Schematic_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp3Schematic_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Exp3Schematic_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Exp3Schematic_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Exp3Schematic_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp3Schematic_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Exp3Verilog.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Exp3Verilog.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Exp3Verilog.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Exp3VerilogTest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Exp3VerilogTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Exp3VerilogTest_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="exp3schematic.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="exp3schematic.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="exp3schematic.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1434564511" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="6722788503651541368" xil_pn:start_ts="1434564510">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1434560447" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1434560447">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565291" xil_pn:in_ck="-2010223420455294232" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1434565291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Verilog.v"/>
+      <outfile xil_pn:name="Exp3VerilogTest.v"/>
+      <outfile xil_pn:name="epx3TestBench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565101" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-201740327769393176" xil_pn:start_ts="1434565101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565103" xil_pn:in_ck="3187417288865931997" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6589903597440943978" xil_pn:start_ts="1434565101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1434560449" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1356204812618048343" xil_pn:start_ts="1434560449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565291" xil_pn:in_ck="-4516451208896661053" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1434565291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.vf"/>
+      <outfile xil_pn:name="Exp3Verilog.v"/>
+      <outfile xil_pn:name="Exp3VerilogTest.v"/>
+      <outfile xil_pn:name="epx3TestBench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565294" xil_pn:in_ck="-4516451208896661053" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6913337219961346008" xil_pn:start_ts="1434565291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Exp3VerilogTest_beh.prj"/>
+      <outfile xil_pn:name="Exp3VerilogTest_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1434565294" xil_pn:in_ck="-2970629621705371479" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4720778151023979685" xil_pn:start_ts="1434565294">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Exp3VerilogTest_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019775" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1435019775">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:in_ck="3187417288865931997" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-418848365549457789" xil_pn:start_ts="1435019775">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1356204812618048343" xil_pn:start_ts="1435019777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1435019777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4042625799858775169" xil_pn:start_ts="1435019777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1435019777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019777" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="803538714107686899" xil_pn:start_ts="1435019777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019817" xil_pn:in_ck="7883942581746554743" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3000183946375936725" xil_pn:start_ts="1435019810">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="Exp3Schematic.jhd"/>
+      <outfile xil_pn:name="Exp3Schematic.lso"/>
+      <outfile xil_pn:name="Exp3Schematic.ngc"/>
+      <outfile xil_pn:name="Exp3Schematic.ngr"/>
+      <outfile xil_pn:name="Exp3Schematic.prj"/>
+      <outfile xil_pn:name="Exp3Schematic.stx"/>
+      <outfile xil_pn:name="Exp3Schematic.syr"/>
+      <outfile xil_pn:name="Exp3Schematic.xst"/>
+      <outfile xil_pn:name="Exp3Schematic_Exp3Schematic_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="Exp3Schematic_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019786" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2279299597300002131" xil_pn:start_ts="1435019786">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019829" xil_pn:in_ck="3187417288865926679" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4127175768288830220" xil_pn:start_ts="1435019825">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.bld"/>
+      <outfile xil_pn:name="Exp3Schematic.ngd"/>
+      <outfile xil_pn:name="Exp3Schematic_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019834" xil_pn:in_ck="3187417288865926680" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1435019829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.pcf"/>
+      <outfile xil_pn:name="Exp3Schematic_map.map"/>
+      <outfile xil_pn:name="Exp3Schematic_map.mrp"/>
+      <outfile xil_pn:name="Exp3Schematic_map.ncd"/>
+      <outfile xil_pn:name="Exp3Schematic_map.ngm"/>
+      <outfile xil_pn:name="Exp3Schematic_map.xrpt"/>
+      <outfile xil_pn:name="Exp3Schematic_summary.xml"/>
+      <outfile xil_pn:name="Exp3Schematic_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019842" xil_pn:in_ck="-7909977011051239119" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1435019834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.ncd"/>
+      <outfile xil_pn:name="Exp3Schematic.pad"/>
+      <outfile xil_pn:name="Exp3Schematic.par"/>
+      <outfile xil_pn:name="Exp3Schematic.ptwx"/>
+      <outfile xil_pn:name="Exp3Schematic.unroutes"/>
+      <outfile xil_pn:name="Exp3Schematic.xpi"/>
+      <outfile xil_pn:name="Exp3Schematic_pad.csv"/>
+      <outfile xil_pn:name="Exp3Schematic_pad.txt"/>
+      <outfile xil_pn:name="Exp3Schematic_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019768" xil_pn:in_ck="3187417288865926548" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1435019756">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1435019842" xil_pn:in_ck="3187417288865926548" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1435019839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Exp3Schematic.twr"/>
+      <outfile xil_pn:name="Exp3Schematic.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1434562204" xil_pn:in_ck="3187417288865926680" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1434562198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

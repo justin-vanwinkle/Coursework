@@ -1,0 +1,101 @@
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -i -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf -ucf exp4sch.ucf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-cp132-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf -ucf exp4sch.ucf 
+bitgen -intstyle ise -f exp4sch.ut exp4sch.ncd 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-tq144-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-cp132-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf -ucf exp4sch.ucf 
+bitgen -intstyle ise -f exp4sch.ut exp4sch.ncd 
+xst -intstyle ise -ifn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.xst" -ofn "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc exp4sch.ucf -p xc3s100e-cp132-5 "exp4sch.ngc" exp4sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o exp4sch_map.ncd exp4sch.ngd exp4sch.pcf 
+par -w -intstyle ise -ol high -t 1 exp4sch_map.ncd exp4sch.ncd exp4sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml exp4sch.twx exp4sch.ncd -o exp4sch.twr exp4sch.pcf -ucf exp4sch.ucf 

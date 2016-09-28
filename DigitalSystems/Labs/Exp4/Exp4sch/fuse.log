@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Labs/Exp4/exp4sch_exp4sch_sch_tb_isim_beh.exe -prj C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Labs/Exp4/exp4sch_exp4sch_sch_tb_beh.prj work.exp4sch_exp4sch_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Labs/Exp4/exp4sch.vf" into library work
+Analyzing Verilog file "C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Labs/Exp4/exp4schTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module XOR2
+Compiling module XOR3
+Compiling module AND2
+Compiling module OR3
+Compiling module exp4sch
+Compiling module exp4sch_exp4sch_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Labs/Exp4/exp4sch_exp4sch_sch_tb_isim_beh.exe
+Fuse Memory Usage: 26360 KB
+Fuse CPU Usage: 484 ms

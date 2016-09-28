@@ -1,0 +1,7 @@
+V3 7
+FL C:/Users/Student/Desktop/temp/codeNand/cNand.v 2015/01/21.14:39:35 J.36
+MO work/cNand FL C:/Users/Student/Desktop/temp/codeNand/cNand.v
+FL C:/Users/Student/Desktop/temp/codeNand/testbench.tfw 2015/01/21.14:41:08 J.36
+MO work/testbench FL C:/Users/Student/Desktop/temp/codeNand/testbench.tfw MI cNand
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

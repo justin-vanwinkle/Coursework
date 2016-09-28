@@ -1,0 +1,22 @@
+//NET "WCLK" CLOCK_DEDICATED_ROUTE = FALSE;		//clock override
+
+NET "R" LOC = "P11"; 			//sw0		//SR
+NET "S" LOC = "L3";				//sw1
+//NET "R" LOC = "K3"; 			//sw2
+//NET "A[3]" LOC = "B4"; 		//sw3
+//NET "D[0]" LOC = "G3";		//sw4
+//NET "D[1]" LOC = "F3";		//sw5
+//NET "D[2]" LOC = "E2";		//sw6
+NET "D" LOC = "N3";				//sw7		//D
+
+NET "CLK" LOC = "G12";			//btn0	//CLK
+//NET "WCLK" LOC = "C11";		//btn1
+
+NET "Q" LOC = "M5";				//led0	//async SR
+NET "Qbar" LOC = "M11";			//led1
+//NET "O[2]" LOC = "P7";		//led2
+NET "O" LOC = "P6";				//led3	//sync SR
+NET "Obar" LOC = "N5";			//led4
+//NET "out[5]" LOC = "N4";		//led5
+NET "P" LOC = "P4";				//led6	//D latch
+NET "Pbar" LOC = "G1";			//led7

@@ -1,0 +1,3 @@
+MODULE invTestBench
+SUBMODULE invsch
+INSTANCE UUT

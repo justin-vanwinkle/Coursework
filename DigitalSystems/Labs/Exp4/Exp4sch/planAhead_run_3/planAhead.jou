@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Jun 23 13:24:04 2015
+# Process ID: 4212
+# Log file: C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/pa.fromNetlist.tcl}
+set_property package_pin "" [get_ports [list  {S[2]}]]
+set_property iostandard LVCMOS25 [get_ports [list {S[2]}]]
+set_property iostandard LVCMOS25 [get_ports [list {S[0]}]]
+set_property iostandard LVCMOS25 [get_ports [list {S[1]}]]
+set_property iostandard SSTL2_I [get_ports [list {S[2]}]]
+set_property package_pin "" [get_ports [list  {S[2]}]]
+set_property iostandard PCI33_3 [get_ports [list {S[2]}]]
+set_property package_pin "" [get_ports [list  {S[2]}]]
+set_property iostandard LVCMOS25 [get_ports [list {S[2]} {S[1]} {S[0]}]]
+set_property iostandard PCIX [get_ports [list {S[2]} {S[1]} {S[0]}]]
+set_property package_pin "" [get_ports [list  {S[2]}]]

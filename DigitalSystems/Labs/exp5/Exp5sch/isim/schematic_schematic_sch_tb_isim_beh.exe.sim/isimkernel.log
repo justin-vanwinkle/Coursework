@@ -1,0 +1,10 @@
+Command line:
+   schematic_schematic_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52372
+
+Mon Jul 13 20:55:53 2015
+
+
+ Elaboration Time: 0.21875 sec

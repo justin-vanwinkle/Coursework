@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : invTestBench.tfw
+// /___/   /\     Timestamp : Wed Jan 21 14:07:51 2015
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: invTestBench
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module invTestBench;
+    reg A = 1'b0;
+    wire O;
+
+
+    invsch UUT (
+        .A(A),
+        .O(O));
+
+    initial begin
+        // -------------  Current Time:  300ns
+        #300;
+        A = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  600ns
+        #300;
+        A = 1'b0;
+    end
+
+endmodule
+

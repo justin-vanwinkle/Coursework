@@ -1,0 +1,10 @@
+xst -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -ifn codeInv.xst -ofn codeInv.syr
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "codeInv.ngc" codeInv.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeInv_map.ncd codeInv.ngd codeInv.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -w -intstyle ise -ol std -t 1 codeInv_map.ncd codeInv.ncd codeInv.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -e 3 -s 5 -xml codeInv codeInv.ncd -o codeInv.twr codeInv.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -dd _ngo -nt timestamp -uc "codeInv.ucf" -p xc3s100e-cp132-5 "codeInv.ngc" codeInv.ngd
+map -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o codeInv_map.ncd codeInv.ngd codeInv.pcf
+par -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -w -intstyle ise -ol std -t 1 codeInv_map.ncd codeInv.ncd codeInv.pcf
+trce -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -e 3 -s 5 -xml codeInv codeInv.ncd -o codeInv.twr codeInv.pcf -ucf codeInv.ucf
+bitgen -ise "C:/Users/Student/Desktop/Lab1/invCode/invCode.ise" -intstyle ise -f codeInv.ut codeInv.ncd

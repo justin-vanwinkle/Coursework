@@ -1,0 +1,3 @@
+verilog work "cNand.v"
+verilog work "testbench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

@@ -1,0 +1,8 @@
+V3 7
+FL C:/Users/Student/Desktop/temp/Lab1Part3/part3sch.v 2015/01/21.14:17:00 J.36
+MO work/part3sch FL C:/Users/Student/Desktop/temp/Lab1Part3/part3sch.v
+FL C:/Users/Student/Desktop/temp/Lab1Part3/TestBench.tfw 2015/01/21.14:18:58 J.36
+MO work/TestBench FL C:/Users/Student/Desktop/temp/Lab1Part3/TestBench.tfw \
+      MI part3sch
+FL $XILINX/verilog/src/glbl.v 2007/05/18.16:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

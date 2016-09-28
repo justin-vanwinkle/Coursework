@@ -1,0 +1,16 @@
+sch2verilog -intstyle ise -family spartan3e   -w "C:/Users/Student/Desktop/temp/orGate/orGate.sch" orGate.vf
+xst -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -ifn orGate.xst -ofn orGate.syr
+ngdbuild -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "orGate.ngc" orGate.ngd
+map -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o orGate_map.ncd orGate.ngd orGate.pcf
+par -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -w -intstyle ise -ol std -t 1 orGate_map.ncd orGate.ncd orGate.pcf
+trce -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -e 3 -s 5 -xml orGate orGate.ncd -o orGate.twr orGate.pcf
+ngdbuild -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -dd _ngo -nt timestamp -uc "orGate.ucf" -p xc3s100e-cp132-5 "orGate.ngc" orGate.ngd
+map -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o orGate_map.ncd orGate.ngd orGate.pcf
+par -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -w -intstyle ise -ol std -t 1 orGate_map.ncd orGate.ncd orGate.pcf
+trce -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -e 3 -s 5 -xml orGate orGate.ncd -o orGate.twr orGate.pcf -ucf orGate.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -f orGate.ut orGate.ncd
+ngdbuild -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -dd _ngo -nt timestamp -uc "orGate.ucf" -p xc3s100e-cp132-5 "orGate.ngc" orGate.ngd
+map -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o orGate_map.ncd orGate.ngd orGate.pcf
+par -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -w -intstyle ise -ol std -t 1 orGate_map.ncd orGate.ncd orGate.pcf
+trce -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -e 3 -s 5 -xml orGate orGate.ncd -o orGate.twr orGate.pcf -ucf orGate.ucf
+bitgen -ise "C:/Users/Student/Desktop/temp/orGate/orGate.ise" -intstyle ise -f orGate.ut orGate.ncd

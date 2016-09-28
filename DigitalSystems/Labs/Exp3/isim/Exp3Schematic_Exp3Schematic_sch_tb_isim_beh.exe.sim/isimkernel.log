@@ -1,0 +1,30 @@
+Command line:
+   Exp3Schematic_Exp3Schematic_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51614
+
+Wed Jun 17 14:03:10 2015
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 852.283 Meg
+
+ Total Signals          : 91
+ Total Nets             : 58
+ Total Signal Drivers   : 21
+ Total Blocks           : 18
+ Total Primitive Blocks : 16
+ Total Processes        : 23
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 622
+Total Line Count : 15
+Total Line Count : 15
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 380.367 Meg
+
+Wed Jun 17 14:07:39 2015
+

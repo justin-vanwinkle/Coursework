@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : sch2verilog
+//  /   /         Filename : invsch.vf
+// /___/   /\     Timestamp : 01/21/2015 14:06:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx92i\bin\nt\sch2verilog.exe -intstyle ise -family spartan3e -w C:/Users/Student/Desktop/temp/inverter/invsch.sch invsch.vf
+//Design Name: invsch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module invsch(A, 
+              O);
+
+    input A;
+   output O;
+   
+   
+   INV XLXI_1 (.I(A), 
+               .O(O));
+endmodule

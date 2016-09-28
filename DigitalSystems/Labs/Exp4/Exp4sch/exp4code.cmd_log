@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4code.v} -lang verilog -prj Exp4 -o exp4code.spl -module exp4code -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e exp4code.spl {C:/Users/justi_000/Dropbox/Justin/Academia/Current Courses/Digital/Exp4/exp4code.sym} 

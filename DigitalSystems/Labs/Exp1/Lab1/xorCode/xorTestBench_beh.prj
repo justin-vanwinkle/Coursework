@@ -1,0 +1,3 @@
+verilog work "codeXOR.v"
+verilog work "xorTestBench.tfw"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

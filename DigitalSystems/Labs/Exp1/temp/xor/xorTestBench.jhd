@@ -1,0 +1,3 @@
+MODULE xorTestBench
+SUBMODULE xorsch
+INSTANCE UUT

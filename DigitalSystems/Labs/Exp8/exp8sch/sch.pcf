@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 23 14:47:19 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Obar" LOCATE = SITE "N5" LEVEL 1;
+COMP "Pbar" LOCATE = SITE "G1" LEVEL 1;
+COMP "Qbar" LOCATE = SITE "M11" LEVEL 1;
+COMP "D" LOCATE = SITE "N3" LEVEL 1;
+COMP "O" LOCATE = SITE "P6" LEVEL 1;
+COMP "P" LOCATE = SITE "P4" LEVEL 1;
+COMP "Q" LOCATE = SITE "M5" LEVEL 1;
+COMP "R" LOCATE = SITE "P11" LEVEL 1;
+COMP "S" LOCATE = SITE "L3" LEVEL 1;
+COMP "CLK" LOCATE = SITE "G12" LEVEL 1;
+SCHEMATIC END;
+
